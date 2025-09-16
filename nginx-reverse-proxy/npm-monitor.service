@@ -1,0 +1,12 @@
+[Unit]
+Description=Nginx Proxy Manager Log Monitor
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/npm_monitor.py
+Restart=always
+User=nobody
+Group=nogroup
+
+[Install]
+WantedBy=multi-user.target

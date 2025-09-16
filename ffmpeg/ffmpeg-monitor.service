@@ -1,0 +1,12 @@
+[Unit]
+Description=FFmpeg Transcode Monitor
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/ffmpeg_monitor.py
+Restart=always
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target

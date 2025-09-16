@@ -22,7 +22,7 @@ This agent helps you **centralize NPM logs**, detect problems quickly, and corre
 1. **Clone this repository** (or copy the agent files):  
 
    ```bash
-   git clone https://github.com/yourusername/custom-logging-agents.git
+   git clone https://github.com/CipherWorkZ/custom-logging-agents.git
    cd custom-logging-agents/npm-agent
    ```
 

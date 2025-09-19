@@ -50,8 +50,8 @@ interval = 5
 
 1. Copy the script:  
    ```bash
-   sudo cp ffmpeg_monitor.py /opt/ffmpeg_monitor.py
-   sudo chmod +x /opt/ffmpeg_monitor.py
+   sudo cp ffmpeg_monitor.py /usr/local/bin/ffmpeg_monitor.py
+   sudo chmod +x /usr/local/bin/ffmpeg_monitor.py
    ```
 
 2. Create config file:  
@@ -72,7 +72,7 @@ interval = 5
    After=network.target
 
    [Service]
-   ExecStart=/usr/bin/python3 /opt/ffmpeg_monitor.py
+   ExecStart=/usr/bin/python3 /usr/local/bin/ffmpeg_monitor.py
    Restart=always
    User=nobody
    Group=nogroup

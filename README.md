@@ -16,7 +16,8 @@ The updater checks GitHub for new versions, pulls updates automatically, and res
    - Reports CPU, RAM, I/O, and network usage  
    - Assigns tracking IDs (TIDs) per process  
    - Generates per-session summaries when jobs complete  
-   - Bundled updater ensures you’re always on the latest version  
+   - Bundled updater ensures you’re always on the latest version
+   - NEW FEATURE issues tracking, track and send issues and error log aswell as a issues id 
 
 2. [Nginx Proxy Manager Agent](./nginx-reverse-proxy)  
    - Tails NPM access/error logs in real time  

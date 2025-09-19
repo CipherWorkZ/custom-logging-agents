@@ -47,8 +47,14 @@ custom-logging-agents/
 │   ├── npm_monitor.VERSION
 │   ├── aagent_updater.conf
 │   └── README.md
+├── update_agent/ # Generic updater framework
+│ ├── agent_updater.py
+│ ├── agent-updater.service
+│ ├── agent_updater.conf
+│ ├── agent_updater.log
+│ └── README.md
 │
-└── README.md            # Main index (this file)
+└── README.md # Main index (this file)         # Main index (this file)
 ```
 
 ---

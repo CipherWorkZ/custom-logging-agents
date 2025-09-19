@@ -18,6 +18,7 @@ It tracks CPU, RAM, disk I/O, and network usage for each FFmpeg process, assigns
 - Generates **summary logs** when a process ends, with duration and aggregated stats  
 - Configurable via simple `.conf` file  
 - Runs as a **systemd service**  
+- **Bundled updater agent** automatically keeps this service up-to-date from GitHub  
 
 ---
 
@@ -90,6 +91,15 @@ interval = 5
 
 ---
 
+## 🔄 Automatic Updates
+
+Each agent now ships with an **`agent_updater.py`** script and its own systemd service.  
+This updater periodically checks the GitHub repo for new versions (`.VERSION` file), downloads updates automatically, and restarts the `ffmpeg-monitor` service if a new version is found.  
+
+That means **no manual updates needed** – your monitoring agent will always stay current.  
+
+---
+
 ## 📊 Example Log
 
 ### Real-time metric log
@@ -145,3 +155,4 @@ interval = 5
 ## 📌 Notes
 - Network I/O values are currently **system-wide**, not per-process. They can be adjusted to relative deltas if needed.  
 - The agent is meant to be **extensible**: you can reuse the same pattern for other apps (nginx, postgres, etc.).  
+- With the built-in updater, you can just deploy once and let it keep itself updated.

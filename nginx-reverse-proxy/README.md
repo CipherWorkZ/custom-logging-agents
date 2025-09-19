@@ -37,10 +37,10 @@ This agent helps you **centralize NPM logs**, detect problems quickly, and corre
 3. **Copy files into place**:  
 
    ```bash
-   sudo cp npm_monitor.py /opt/npm_monitor.py
+   sudo cp npm_monitor.py /usr/local/bin/npm_monitor.py
    sudo cp npm_monitor.conf /etc/npm_monitor.conf
    sudo cp npm-monitor.service /etc/systemd/system/npm-monitor.service
-   sudo chmod +x /opt/npm_monitor.py
+   sudo chmod +x /usr/local/bin/npm_monitor.py
    ```
 
 ---

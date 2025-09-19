@@ -3,7 +3,7 @@ Description=FFmpeg Transcode Monitor
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/python3 /opt/ffmpeg_monitor.py
+ExecStart=/usr/bin/python3 /usr/local/bin/ffmpeg_monitor.py
 Restart=always
 User=root
 Group=root

@@ -1,0 +1,3 @@
+2025-09-19 13:11:01,107 [INFO] Starting updater for ffmpeg_monitor
+2025-09-19 13:11:01,108 [WARNING] Agent file missing: /usr/local/bin/ffmpeg_monitor.py
+2025-09-19 13:11:01,357 [WARNING] No local version found

@@ -1,0 +1,11 @@
+2025-09-19 13:13:08,841 [INFO] Starting updater for ffmpeg_monitor
+2025-09-19 13:13:08,841 [WARNING] Agent file missing: /usr/local/bin/ffmpeg_monitor.py
+2025-09-19 13:13:08,960 [WARNING] No local version found
+2025-09-19 13:13:34,936 [INFO] Starting updater for ffmpeg_monitor
+2025-09-19 13:13:34,937 [WARNING] Agent file missing: /usr/local/bin/ffmpeg_monitor.py
+2025-09-19 13:13:35,114 [WARNING] No local version found
+2025-09-19 13:16:35,286 [INFO] Starting updater for nginx-reverse-proxy
+2025-09-19 13:16:35,287 [WARNING] Agent file missing: /usr/local/bin/npm_monitor.py
+2025-09-19 13:16:35,463 [WARNING] No local version found
+2025-09-19 13:23:41,827 [INFO] Starting updater for nginx-reverse-proxy
+2025-09-19 13:23:42,029 [WARNING] No remote version found

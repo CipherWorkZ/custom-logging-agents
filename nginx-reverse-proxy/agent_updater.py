@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 import os, sys, time, configparser, requests, subprocess, logging, re
 
-CONFIG_FILE = "./agent_updater.conf"  # or /etc/agent_updater.conf
-LOG_FILE    = "./agent_updater.log"
+CONFIG_FILE = "/etc/agent_updater.conf"
+LOG_FILE    = "/var/log/agent_updater.log"
 
 logging.basicConfig(
     level=logging.INFO,

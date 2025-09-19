@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-AGENT_VERSION = "1.0.0"
+AGENT_VERSION = "1.0.1"
 import psutil, socket, json, time, datetime, pytz, configparser, logging, sys, uuid, re, threading
 try:
     from pynvml import *

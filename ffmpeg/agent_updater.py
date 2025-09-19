@@ -63,7 +63,7 @@ def update_agent():
 
 def restart_service():
     """Restart systemd service"""
-    svc = f"{AGENT_NAME}.service"
+    svc = f"{AGENT_NAME.replace('_','-')}.service"
     try:
         subprocess.run(["systemctl", "restart", svc], check=True)
         logging.info(f"Restarted {svc}")

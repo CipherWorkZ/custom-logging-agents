@@ -1,0 +1,16 @@
+[Unit]
+Description=Agent Updater Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /usr/local/bin/agent_updater.py
+WorkingDirectory=/usr/local/bin
+Restart=always
+RestartSec=10
+User=nobody
+Group=nogroup
+StandardOutput=append:/var/log/agent_updater.log
+StandardError=append:/var/log/agent_updater.log
+
+[Install]
+WantedBy=multi-user.target

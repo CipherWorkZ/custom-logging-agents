@@ -35,6 +35,7 @@ custom-logging-agents/
 │   ├── ffmpeg_monitor.conf
 │   ├── ffmpeg_monitor.service
 │   ├── agent_updater.py
+│   ├── ffmpeg_monitor.VERSION
 │   ├── agent_updater.conf
 │   └── README.md
 │
@@ -43,6 +44,7 @@ custom-logging-agents/
 │   ├── npm_monitor.conf
 │   ├── npm_monitor.service
 │   ├── agent_updater.py
+│   ├── npm_monitor.VERSION
 │   ├── aagent_updater.conf
 │   └── README.md
 │

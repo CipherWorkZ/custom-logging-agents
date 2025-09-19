@@ -4,7 +4,9 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
 CONFIG_FILE = "/etc/npm_monitor.conf"
-LOG_FILE = "/var/log/npm_monitor.log"
+LOG_FILE = "/var/log/npm_monitor.log"3
+AGENT_VERSION = "1.0.0"
+
 
 # --- Setup logging ---
 logging.basicConfig(

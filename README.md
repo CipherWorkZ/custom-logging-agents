@@ -4,6 +4,9 @@ A collection of lightweight Python agents and systemd services for **custom log 
 
 Each agent runs independently and is designed to monitor or tail a specific application/service, enrich logs with structured JSON (and tracking IDs when useful), and ship them directly into your logging pipeline.  
 
+As of **v1.0.1**, each logging agent now comes bundled with its own **self-updating agent** – no extra configuration needed.  
+The updater checks GitHub for new versions, pulls updates automatically, and restarts the service seamlessly.  
+
 ---
 
 ## 📑 Table of Contents
@@ -13,11 +16,13 @@ Each agent runs independently and is designed to monitor or tail a specific appl
    - Reports CPU, RAM, I/O, and network usage  
    - Assigns tracking IDs (TIDs) per process  
    - Generates per-session summaries when jobs complete  
+   - Bundled updater ensures you’re always on the latest version  
 
 2. [Nginx Proxy Manager Agent](./nginx-reverse-proxy)  
    - Tails NPM access/error logs in real time  
    - Streams live log lines into Graylog  
    - Creates tracking IDs (TIDs) for ongoing issues until resolved  
+   - Bundled updater ensures you’re always on the latest version  
 
 ---
 
@@ -29,12 +34,16 @@ custom-logging-agents/
 │   ├── ffmpeg_monitor.py
 │   ├── ffmpeg_monitor.conf
 │   ├── ffmpeg_monitor.service
+│   ├── agent_updater.py
+│   ├── agent_updater.conf
 │   └── README.md
 │
 ├── nginx-reverse-proxy/ # Nginx Proxy Manager log agent
 │   ├── npm_monitor.py
 │   ├── npm_monitor.conf
 │   ├── npm_monitor.service
+│   ├── agent_updater.py
+│   ├── aagent_updater.conf
 │   └── README.md
 │
 └── README.md            # Main index (this file)
@@ -47,3 +56,5 @@ custom-logging-agents/
 1. Choose the agent you want from the [Table of Contents](#-table-of-contents).  
 2. Enter its folder.  
 3. Follow the **README.md** inside that folder for setup instructions.  
+
+⚡ **No need to configure updates manually** – each agent ships with an `agent_updater.py` script and systemd unit that will keep it up-to-date automatically.
